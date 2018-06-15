@@ -33,6 +33,10 @@ class Bebidas {
     function getId_bebida() {
         return $this->id_bebida;
     }
+    
+    function getNome() {
+        return $this->nome;
+    }
 
     function getVolume() {
         return $this->volume;
@@ -56,6 +60,9 @@ class Bebidas {
 
     function setId_bebida($pId_bebida) {
         $this->id_bebida = $pId_bebida;
+    }
+    function setNome($nome) {
+        $this->nome = $nome;
     }
 
     function setVolume($pVolume) {
@@ -222,6 +229,144 @@ class Clientes {
     }
     
 }
+
+class Compras {
+
+    private $id_compra;
+    private $id_cliente;
+    private $data_compra;
+    private $valor_total;
+    private $valortotal_frete;
+    
+        function Compras($id_compra, $id_cliente, $data_compra, $valor_total, $valortotal_frete) {
+        $this->id_compra = $id_compra;
+        $this->id_cliente = $id_cliente;
+        $this->data_compra = strtotime($data_compra);
+        $this->valor_total = $valor_total;
+        $this->valortotal_frete = $valortotal_frete;
+    }
+
+        public function setCompras($id_compra, $id_cliente, $data_compra, $valor_total, $valortotal_frete) {
+	$this->id_compra = $id_compra;
+	$this->id_cliente = $id_cliente;
+	$this->data_compra = strtotime(str_replace('/', '-', $data_compra));// para trocar um caractere pelo outro
+	$this->valor_total = $valor_total;
+        $this->valortotal_frete = $valortotal_frete;
+    }
+    
+    function getId_compra() {
+        return $this->id_compra;
+    }
+
+    function getId_cliente() {
+        return $this->id_cliente;
+    }
+
+    function getData_compra() {
+        return $this->data_compra;
+    }
+
+    function getValor_total() {
+        return $this->valor_total;
+    }
+
+    function getValortotal_frete() {
+        return $this->valortotal_frete;
+    }
+
+    function setId_compra($pId_compra) {
+        $this->id_compra = $pId_compra;
+    }
+
+    function setId_cliente($pId_cliente) {
+        $this->id_cliente = $pId_cliente;
+    }
+
+    function setData_compra($pData_compra) {
+        $this->data_compra = $pData_compra;
+    }
+
+    function setValor_total($pValor_total) {
+        $this->valor_total = $pValor_total;
+    }
+
+    function setValortotal_frete($pValortotal_frete) {
+        $this->valortotal_frete = $pValortotal_frete;
+    }
+    
+}
+
+class Itens_compra {
+
+    private $id_item;
+    private $id_bebida;
+    private $quantidade;
+    private $valor_item;
+    private $id_compra;
+    
+    function Itens_compra($id_item, $id_bebida, $quantidade, $valor_item, $id_compra) {
+        $this->id_item = $id_item;
+        $this->id_bebida = $id_bebida;
+        $this->quantidade = $quantidade;
+        $this->valor_item = $valor_item;
+        $this->id_compra = $id_compra;
+    }
+
+    public function setItens_compra($id_item, $id_bebida, $quantidade, $valor_item, $id_compra) {
+	$this->id_item = $id_item;
+        $this->id_bebida = $id_bebida;
+        $this->quantidade = $quantidade;
+        $this->valor_item = $valor_item;
+        $this->id_compra = $id_compra;
+    }
+    
+    function getId_item() {
+        return $this->id_item;
+    }
+
+    function getId_bebida() {
+        return $this->id_bebida;
+    }
+
+    function getQuantidade() {
+        return $this->quantidade;
+    }
+
+    function getValor_item() {
+        return $this->valor_item;
+    }
+
+    function getId_compra() {
+        return $this->id_compra;
+    }
+
+    function setId_item($pId_item) {
+        $this->id_item = $pId_item;
+    }
+
+    function setId_bebida($pId_bebida) {
+        $this->id_bebida = $pId_bebida;
+    }
+
+    function setQuantidade($pQuantidade) {
+        $this->quantidade = $pQuantidade;
+    }
+
+    function setValor_item($pValor_item) {
+        $this->valor_item = $pValor_item;
+    }
+
+    function setId_compra($pId_compra) {
+        $this->id_compra = $pId_compra;
+    }
+   
+}
+
+
+
+
+
+
 
 
 
