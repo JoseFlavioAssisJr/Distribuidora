@@ -27,7 +27,7 @@ if($opcao == 2) {
     
     $_SESSION['bebidas']=$lista;
     
-    header("Location:exibirBebidas.php");
+    header("Location:view/exibirBebidas.php");
 }
 
 if($opcao == 3)

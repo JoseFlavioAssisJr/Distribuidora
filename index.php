@@ -24,6 +24,9 @@
 							<a class="nav-link" href="view/inserirBebidas.php">Cadastro</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="controlerBebidas.php?opcao=2">Listar Bebidas</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#">Blog</a>
 						</li>
 						<li class="nav-item">
