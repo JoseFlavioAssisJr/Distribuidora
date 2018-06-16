@@ -17,6 +17,8 @@
 			
 			<div class="col-12">
 				
+				<h1>Inserir Bebidas</h1>
+
 				<form action="ControlerBebidas.php" method="post">
 
 					<input type="hidden" name="opcao" value="1"/>

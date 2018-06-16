@@ -25,10 +25,11 @@
 			
 			<div class="col-12">
 				
-				
+				<h1> Lista de Bebidas</h1>
 				<table class="table">
 					<thead>
 						<tr>
+							
 							<th scope="col">Nome</th>
 							<th scope="col">Volume</th>
 							<th scope="col">Preço</th>
@@ -44,6 +45,7 @@
 
 						foreach ($bebidas as $b ) {
 							echo "<tr>";
+							
 							echo "<td> $b->nome</td>";
 							echo "<td> $b->volume</td>";
 							echo "<td> $b->preco</td>";

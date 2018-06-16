@@ -36,12 +36,12 @@ if($opcao == 3)
     
     $bebidasDao = new BebidasDAO();
     
-    $autor = $bebidasDao->getBebida($id_bebida);
+    $bebidas = $bebidasDao->getBebida($id_bebida);
     
     session_start();
     $_SESSION['bebida'] = $bebidas;
     
-    header("Location:formBebidasAtualizar.php");
+    header("Location:view/atualizarBebidas.php");
     
     
 }
