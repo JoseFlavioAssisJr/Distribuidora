@@ -2,364 +2,367 @@
 
 class Bebidas {
 
-    private $id_bebida;
-    private $nome;
-    private $volume;
-    private $preco;
-    private $peso;
-    private $qde_estoque;
-    private $fabricante;
-    
-    function Bebidas($id_bebida, $nome, $volume, $preco, $peso, $qde_estoque, $fabricante) {
-        $this->id_bebida = $id_bebida;
-        $this->nome = $nome;
-        $this->volume = $volume;
-        $this->preco = $preco;
-        $this->peso = $peso;
-        $this->qde_estoque = $qde_estoque;
-        $this->fabricante = $fabricante;
-    }
-    
-    public function setBebidas($id_bebida, $nome, $volume, $preco, $peso, $qde_estoque, $fabricante) {
-	$this->id_bebida = $id_bebida;
-	$this->nome = $nome;
-	$this->volume = $volume;
-	$this->preco = $preco;
-        $this->peso = $peso;
-        $this->qde_estoque = $qde_estoque;
-        $this->fabricante = $fabricante;
-    }
-    
-    function getId_bebida() {
-        return $this->id_bebida;
-    }
-    
-    function getNome() {
-        return $this->nome;
-    }
+private $id_bebida;
+private $nome;
+private $volume;
+private $preco;
+private $peso;
+private $qde_estoque;
+private $fabricante;
 
-    function getVolume() {
-        return $this->volume;
-    }
 
-    function getPreco() {
-        return $this->preco;
-    }
+public function setBebidas($id_bebida, $nome, $volume, $preco, $peso, $qde_estoque, $fabricante) {
+$this->id_bebida = $id_bebida;
+$this->nome = $nome;
+$this->volume = $volume;
+$this->preco = $preco;
+$this->peso = $peso;
+$this->qde_estoque = $qde_estoque;
+$this->fabricante = $fabricante;
+}
 
-    function getPeso() {
-        return $this->peso;
-    }
+public function Bebidas($nome, $volume, $preco, $peso, $qde_estoque, $fabricante) {
 
-    function getQde_estoque() {
-        return $this->qde_estoque;
-    }
+$this->nome = $nome;
+$this->volume = $volume;
+$this->preco = $preco;
+$this->peso = $peso;
+$this->qde_estoque = $qde_estoque;
+$this->fabricante = $fabricante;
+}
 
-    function getFabricante() {
-        return $this->fabricante;
-    }
 
-    function setId_bebida($pId_bebida) {
-        $this->id_bebida = $pId_bebida;
-    }
-    function setNome($nome) {
-        $this->nome = $nome;
-    }
 
-    function setVolume($pVolume) {
-        $this->volume = $pVolume;
-    }
+function getId_bebida() {
+return $this->id_bebida;
+}
 
-    function setPreco($pPreco) {
-        $this->preco = $pPreco;
-    }
+function getNome() {
+return $this->nome;
+}
 
-    function setPeso($pPeso) {
-        $this->peso = $pPeso;
-    }
+function getVolume() {
+return $this->volume;
+}
 
-    function setQde_estoque($pQde_estoque) {
-        $this->qde_estoque = $pQde_estoque;
-    }
+function getPreco() {
+return $this->preco;
+}
 
-    function setFabricante($pFabricante) {
-        $this->fabricante = $pFabricante;
-    }
-    
+function getPeso() {
+return $this->peso;
+}
+
+function getQde_estoque() {
+return $this->qde_estoque;
+}
+
+function getFabricante() {
+return $this->fabricante;
+}
+
+function setId_bebida($pId_bebida) {
+$this->id_bebida = $pId_bebida;
+}
+function setNome($nome) {
+$this->nome = $nome;
+}
+
+function setVolume($pVolume) {
+$this->volume = $pVolume;
+}
+
+function setPreco($pPreco) {
+$this->preco = $pPreco;
+}
+
+function setPeso($pPeso) {
+$this->peso = $pPeso;
+}
+
+function setQde_estoque($pQde_estoque) {
+$this->qde_estoque = $pQde_estoque;
+}
+
+function setFabricante($pFabricante) {
+$this->fabricante = $pFabricante;
+}
+
 }
 
 class Cidades {
 
-    private $id_cidade;
-    private $cidade;
-    private $estado;
-    private $CEP;
-    private $valorfrete_porPeso;
-    private $peso;
-    
-    function Cidades($id_cidade, $cidade, $estado, $CEP, $valorfrete_porPeso, $peso) {
-        $this->id_cidade = $id_cidade;
-        $this->cidade = $cidade;
-        $this->estado = $estado;
-        $this->CEP = $CEP;
-        $this->valorfrete_porPeso = $valorfrete_porPeso;
-        $this->peso = $peso;
-    }
+private $id_cidade;
+private $cidade;
+private $estado;
+private $CEP;
+private $valorfrete_porPeso;
+private $peso;
 
-    public function setCidades($id_cidade, $cidade, $estado, $CEP, $valorfrete_porPeso, $peso) {
-	$this->id_cidade = $id_cidade;
-	$this->cidade = $cidade;
-	$this->estado = $estado;
-	$this->CEP = $CEP;
-        $this->valorfrete_porPeso = $valorfrete_porPeso;
-        $this->peso = $peso;
-    }
-    
-    function getId_cidade() {
-        return $this->id_cidade;
-    }
+function Cidades($id_cidade, $cidade, $estado, $CEP, $valorfrete_porPeso, $peso) {
+$this->id_cidade = $id_cidade;
+$this->cidade = $cidade;
+$this->estado = $estado;
+$this->CEP = $CEP;
+$this->valorfrete_porPeso = $valorfrete_porPeso;
+$this->peso = $peso;
+}
 
-    function getCidade() {
-        return $this->cidade;
-    }
+public function setCidades($id_cidade, $cidade, $estado, $CEP, $valorfrete_porPeso, $peso) {
+$this->id_cidade = $id_cidade;
+$this->cidade = $cidade;
+$this->estado = $estado;
+$this->CEP = $CEP;
+$this->valorfrete_porPeso = $valorfrete_porPeso;
+$this->peso = $peso;
+}
 
-    function getEstado() {
-        return $this->estado;
-    }
+function getId_cidade() {
+return $this->id_cidade;
+}
 
-    function getCEP() {
-        return $this->CEP;
-    }
+function getCidade() {
+return $this->cidade;
+}
 
-    function getValorfrete_porPeso() {
-        return $this->valorfrete_porPeso;
-    }
+function getEstado() {
+return $this->estado;
+}
 
-    function getPeso() {
-        return $this->peso;
-    }
+function getCEP() {
+return $this->CEP;
+}
 
-    function setId_cidade($pId_cidade) {
-        $this->id_cidade = $pId_cidade;
-    }
+function getValorfrete_porPeso() {
+return $this->valorfrete_porPeso;
+}
 
-    function setCidade($pCidade) {
-        $this->cidade = $pCidade;
-    }
+function getPeso() {
+return $this->peso;
+}
 
-    function setEstado($pEstado) {
-        $this->estado = $pEstado;
-    }
+function setId_cidade($pId_cidade) {
+$this->id_cidade = $pId_cidade;
+}
 
-    function setCEP($pCEP) {
-        $this->CEP = $pCEP;
-    }
+function setCidade($pCidade) {
+$this->cidade = $pCidade;
+}
 
-    function setValorfrete_porPeso($pValorfrete_porPeso) {
-        $this->valorfrete_porPeso = $pValorfrete_porPeso;
-    }
+function setEstado($pEstado) {
+$this->estado = $pEstado;
+}
 
-    function setPeso($pPeso) {
-        $this->peso = $pPeso;
-    }
-    
+function setCEP($pCEP) {
+$this->CEP = $pCEP;
+}
+
+function setValorfrete_porPeso($pValorfrete_porPeso) {
+$this->valorfrete_porPeso = $pValorfrete_porPeso;
+}
+
+function setPeso($pPeso) {
+$this->peso = $pPeso;
+}
+
 }
 
 class Clientes {
 
-    private $id_cliente;
-    private $nome;
-    private $cnpj;
-    private $endereco;
-    private $id_cidade;
-    
-    function Clientes($id_cliente, $nome, $cnpj, $endereco, $id_cidade) {
-        $this->id_cliente = $id_cliente;
-        $this->nome = $nome;
-        $this->cnpj = $cnpj;
-        $this->endereco = $endereco;
-        $this->id_cidade = $id_cidade;
-    }
+private $id_cliente;
+private $nome;
+private $cnpj;
+private $endereco;
+private $id_cidade;
 
-        public function setClientes($id_cliente, $nome, $cnpj, $endereco, $id_cidade) {
-	$this->id_cliente = $id_cliente;
-	$this->nome = $nome;
-	$this->cnpj = $cnpj;
-	$this->endereco = $endereco;
-        $this->id_cidade = $id_cidade;
-    }
-    
-    function getId_cliente() {
-        return $this->id_cliente;
-    }
+function Clientes($id_cliente, $nome, $cnpj, $endereco, $id_cidade) {
+$this->id_cliente = $id_cliente;
+$this->nome = $nome;
+$this->cnpj = $cnpj;
+$this->endereco = $endereco;
+$this->id_cidade = $id_cidade;
+}
 
-    function getNome() {
-        return $this->nome;
-    }
+public function setClientes($id_cliente, $nome, $cnpj, $endereco, $id_cidade) {
+$this->id_cliente = $id_cliente;
+$this->nome = $nome;
+$this->cnpj = $cnpj;
+$this->endereco = $endereco;
+$this->id_cidade = $id_cidade;
+}
 
-    function getCnpj() {
-        return $this->cnpj;
-    }
+function getId_cliente() {
+return $this->id_cliente;
+}
 
-    function getEndereco() {
-        return $this->endereco;
-    }
+function getNome() {
+return $this->nome;
+}
 
-    function getId_cidade() {
-        return $this->id_cidade;
-    }
+function getCnpj() {
+return $this->cnpj;
+}
 
-    function setId_cliente($id_cliente) {
-        $this->id_cliente = $id_cliente;
-    }
+function getEndereco() {
+return $this->endereco;
+}
 
-    function setNome($pNome) {
-        $this->nome = $pNome;
-    }
+function getId_cidade() {
+return $this->id_cidade;
+}
 
-    function setCnpj($pCnpj) {
-        $this->cnpj = $pCnpj;
-    }
+function setId_cliente($id_cliente) {
+$this->id_cliente = $id_cliente;
+}
 
-    function setEndereco($pEndereco) {
-        $this->endereco = $pEndereco;
-    }
+function setNome($pNome) {
+$this->nome = $pNome;
+}
 
-    function setId_cidade($pId_cidade) {
-        $this->id_cidade = $pId_cidade;
-    }
-    
+function setCnpj($pCnpj) {
+$this->cnpj = $pCnpj;
+}
+
+function setEndereco($pEndereco) {
+$this->endereco = $pEndereco;
+}
+
+function setId_cidade($pId_cidade) {
+$this->id_cidade = $pId_cidade;
+}
+
 }
 
 class Compras {
 
-    private $id_compra;
-    private $id_cliente;
-    private $data_compra;
-    private $valor_total;
-    private $valortotal_frete;
-    
-        function Compras($id_compra, $id_cliente, $data_compra, $valor_total, $valortotal_frete) {
-        $this->id_compra = $id_compra;
-        $this->id_cliente = $id_cliente;
-        $this->data_compra = strtotime($data_compra);
-        $this->valor_total = $valor_total;
-        $this->valortotal_frete = $valortotal_frete;
-    }
+private $id_compra;
+private $id_cliente;
+private $data_compra;
+private $valor_total;
+private $valortotal_frete;
 
-        public function setCompras($id_compra, $id_cliente, $data_compra, $valor_total, $valortotal_frete) {
-	$this->id_compra = $id_compra;
-	$this->id_cliente = $id_cliente;
-	$this->data_compra = strtotime(str_replace('/', '-', $data_compra));// para trocar um caractere pelo outro
-	$this->valor_total = $valor_total;
-        $this->valortotal_frete = $valortotal_frete;
-    }
-    
-    function getId_compra() {
-        return $this->id_compra;
-    }
+function Compras($id_compra, $id_cliente, $data_compra, $valor_total, $valortotal_frete) {
+$this->id_compra = $id_compra;
+$this->id_cliente = $id_cliente;
+$this->data_compra = strtotime($data_compra);
+$this->valor_total = $valor_total;
+$this->valortotal_frete = $valortotal_frete;
+}
 
-    function getId_cliente() {
-        return $this->id_cliente;
-    }
+public function setCompras($id_compra, $id_cliente, $data_compra, $valor_total, $valortotal_frete) {
+$this->id_compra = $id_compra;
+$this->id_cliente = $id_cliente;
+$this->data_compra = strtotime(str_replace('/', '-', $data_compra));// para trocar um caractere pelo outro
+$this->valor_total = $valor_total;
+$this->valortotal_frete = $valortotal_frete;
+}
 
-    function getData_compra() {
-        return $this->data_compra;
-    }
+function getId_compra() {
+return $this->id_compra;
+}
 
-    function getValor_total() {
-        return $this->valor_total;
-    }
+function getId_cliente() {
+return $this->id_cliente;
+}
 
-    function getValortotal_frete() {
-        return $this->valortotal_frete;
-    }
+function getData_compra() {
+return $this->data_compra;
+}
 
-    function setId_compra($pId_compra) {
-        $this->id_compra = $pId_compra;
-    }
+function getValor_total() {
+return $this->valor_total;
+}
 
-    function setId_cliente($pId_cliente) {
-        $this->id_cliente = $pId_cliente;
-    }
+function getValortotal_frete() {
+return $this->valortotal_frete;
+}
 
-    function setData_compra($pData_compra) {
-        $this->data_compra = $pData_compra;
-    }
+function setId_compra($pId_compra) {
+$this->id_compra = $pId_compra;
+}
 
-    function setValor_total($pValor_total) {
-        $this->valor_total = $pValor_total;
-    }
+function setId_cliente($pId_cliente) {
+$this->id_cliente = $pId_cliente;
+}
 
-    function setValortotal_frete($pValortotal_frete) {
-        $this->valortotal_frete = $pValortotal_frete;
-    }
-    
+function setData_compra($pData_compra) {
+$this->data_compra = $pData_compra;
+}
+
+function setValor_total($pValor_total) {
+$this->valor_total = $pValor_total;
+}
+
+function setValortotal_frete($pValortotal_frete) {
+$this->valortotal_frete = $pValortotal_frete;
+}
+
 }
 
 class Itens_compra {
 
-    private $id_item;
-    private $id_bebida;
-    private $quantidade;
-    private $valor_item;
-    private $id_compra;
-    
-    function Itens_compra($id_item, $id_bebida, $quantidade, $valor_item, $id_compra) {
-        $this->id_item = $id_item;
-        $this->id_bebida = $id_bebida;
-        $this->quantidade = $quantidade;
-        $this->valor_item = $valor_item;
-        $this->id_compra = $id_compra;
-    }
+private $id_item;
+private $id_bebida;
+private $quantidade;
+private $valor_item;
+private $id_compra;
 
-    public function setItens_compra($id_item, $id_bebida, $quantidade, $valor_item, $id_compra) {
-	$this->id_item = $id_item;
-        $this->id_bebida = $id_bebida;
-        $this->quantidade = $quantidade;
-        $this->valor_item = $valor_item;
-        $this->id_compra = $id_compra;
-    }
-    
-    function getId_item() {
-        return $this->id_item;
-    }
+function Itens_compra($id_item, $id_bebida, $quantidade, $valor_item, $id_compra) {
+$this->id_item = $id_item;
+$this->id_bebida = $id_bebida;
+$this->quantidade = $quantidade;
+$this->valor_item = $valor_item;
+$this->id_compra = $id_compra;
+}
 
-    function getId_bebida() {
-        return $this->id_bebida;
-    }
+public function setItens_compra($id_item, $id_bebida, $quantidade, $valor_item, $id_compra) {
+$this->id_item = $id_item;
+$this->id_bebida = $id_bebida;
+$this->quantidade = $quantidade;
+$this->valor_item = $valor_item;
+$this->id_compra = $id_compra;
+}
 
-    function getQuantidade() {
-        return $this->quantidade;
-    }
+function getId_item() {
+return $this->id_item;
+}
 
-    function getValor_item() {
-        return $this->valor_item;
-    }
+function getId_bebida() {
+return $this->id_bebida;
+}
 
-    function getId_compra() {
-        return $this->id_compra;
-    }
+function getQuantidade() {
+return $this->quantidade;
+}
 
-    function setId_item($pId_item) {
-        $this->id_item = $pId_item;
-    }
+function getValor_item() {
+return $this->valor_item;
+}
 
-    function setId_bebida($pId_bebida) {
-        $this->id_bebida = $pId_bebida;
-    }
+function getId_compra() {
+return $this->id_compra;
+}
 
-    function setQuantidade($pQuantidade) {
-        $this->quantidade = $pQuantidade;
-    }
+function setId_item($pId_item) {
+$this->id_item = $pId_item;
+}
 
-    function setValor_item($pValor_item) {
-        $this->valor_item = $pValor_item;
-    }
+function setId_bebida($pId_bebida) {
+$this->id_bebida = $pId_bebida;
+}
 
-    function setId_compra($pId_compra) {
-        $this->id_compra = $pId_compra;
-    }
-   
+function setQuantidade($pQuantidade) {
+$this->quantidade = $pQuantidade;
+}
+
+function setValor_item($pValor_item) {
+$this->valor_item = $pValor_item;
+}
+
+function setId_compra($pId_compra) {
+$this->id_compra = $pId_compra;
+}
+
 }
 
 

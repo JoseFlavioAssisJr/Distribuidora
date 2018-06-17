@@ -6,17 +6,15 @@ require_once('BebidasDAO.inc');
 $opcao = (int)$_REQUEST['opcao'];
 if($opcao == 1)
 {
-    $bebidas = new Bebidas($_POST['nome'], $_POST['volume'], $_POST['preco'], $_POST['peso'], $_POST['qde_estoque'], $_POST['fabricante']);
+    $bebida = new Bebidas($_POST['nome'], $_POST['volume'], $_POST['preco'], $_POST['peso'], $_POST['qde_estoque'], $_POST['fabricante']);
     $bebidasDao = new BebidasDAO();
     
-    $bebidasDao->incluirBebidas($bebidas);
+    $bebidasDao->incluirBebida($bebida);
     
     header("Location:controlerBebidas.php?opcao=2");
     
     
 }
-
-
 
 if($opcao == 2) {
     $bebidasDao = new BebidasDAO();
@@ -32,7 +30,7 @@ if($opcao == 2) {
 
 if($opcao == 3)
 {
-    $id_bebida = (int)$_REQUEST['id_bebida'];
+    $id_bebida = (int)$_REQUEST['id'];
     
     $bebidasDao = new BebidasDAO();
     
@@ -59,12 +57,12 @@ if($opcao == 4)
 
 if($opcao == 5)
 {
-    $bebidas = new Bebidas($_POST['pNome'], $_POST['pVolume'],$_POST['pPreco'], $_POST['pPeso'], $_POST['pQde_estoque'],$_POST['pFabricante']);
-    $bebidas->setId_bebida($_POST['pId_bebida']);
+    $bebida = new Bebidas($_POST['nome'], $_POST['volume'],$_POST['preco'], $_POST['peso'], $_POST['qde_estoque'],$_POST['fabricante']);
+    $bebida->setId_bebida($_POST['id_bebida']);
     
     $bebidasDao = new BebidasDAO();
     
-    $bebidasDao->atualizarBebida($bebidas);
+    $bebidasDao->atualizarBebida($bebida);
     
     header("Location:controlerBebidas.php?opcao=2");
     

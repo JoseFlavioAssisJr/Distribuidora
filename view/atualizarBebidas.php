@@ -27,44 +27,51 @@
 
 				<h1> Alterar Dados Bebida</h1>
 				
-				<form action="ControlerBebidas.php" method="post">
+				<form action="../controlerBebidas.php" method="post">
 
-					<input type="hidden" name="opcao" value="1"/>
+					<input type="hidden" name="opcao" value="5"/>
+
 
 					<div class="form-group">
-						<label for="nome">Nome</label>
-						<input type="text" class="form-control" name="nome" id="nome" value="<?php echo $b->nome ?>">
-
+						<label for="nome">ID</label>
+						<input type="text" class="form-control" name="id_bebida" id="id_bebida" value="<?php echo $b->id_bebida ?>">
 					</p>
 				</div>
-				<div class="form-group">
-					<label for="volume">Volume</label>
-					<input type="text" class="form-control" name="volume" id="volume" value="<?php echo $b->volume ?>">
-				</div>
-				<div class="form-group">
-					<label for="preco">Preco</label>
-					<input type="text" class="form-control" name="preco" id="preco" value="<?php echo $b->preco ?>">
-				</div>
-				<div class="form-group">
-					<label for="peso">Peso</label>
-					<input type="text" class="form-control" name="peso" id="peso" value="<?php echo $b->peso ?>">
-				</div>
-				<div class="form-group">
-					<label for="qtdEstoque">Quantidade em Estoque</label>
-					<input type="text" class="form-control" name="qtdEstoque" id="qtdEstoque" value="<?php echo $b->qde_estoque ?>">
-				</div>
-				<div class="form-group">
-					<label for="fabricante">Fabricante</label>
-					<input type="text" class="form-control" name="fabricante" id="fabricante" value="<?php echo $b->fabricante ?>">
-				</div>
 
-				<button type="submit" class="btn btn-primary">Atualizar</button>
-			</form>
+				<div class="form-group">
+					<label for="nome">Nome</label>
+					<input type="text" class="form-control" name="nome" id="nome" value="<?php echo $b->nome ?>">
 
+				</p>
+			</div>
+			<div class="form-group">
+				<label for="volume">Volume</label>
+				<input type="text" class="form-control" name="volume" id="volume" value="<?php echo $b->volume ?>">
+			</div>
+			<div class="form-group">
+				<label for="preco">Preco</label>
+				<input type="text" class="form-control" name="preco" id="preco" value="<?php echo $b->preco ?>">
+			</div>
+			<div class="form-group">
+				<label for="peso">Peso</label>
+				<input type="text" class="form-control" name="peso" id="peso" value="<?php echo $b->peso ?>">
+			</div>
+			<div class="form-group">
+				<label for="qtdEstoque">Quantidade em Estoque</label>
+				<input type="text" class="form-control" name="qde_estoque" id="qde_estoque" value="<?php echo $b->qde_estoque ?>">
+			</div>
+			<div class="form-group">
+				<label for="fabricante">Fabricante</label>
+				<input type="text" class="form-control" name="fabricante" id="fabricante" value="<?php echo $b->fabricante ?>">
+			</div>
 
-		</div>
+			<button type="submit" class="btn btn-primary">Atualizar</button>
+		</form>
+
 
 	</div>
+
+</div>
 </div>
 
 

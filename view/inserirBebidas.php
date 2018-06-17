@@ -19,9 +19,9 @@
 				
 				<h1>Inserir Bebidas</h1>
 
-				<form action="ControlerBebidas.php" method="post">
+				<form action="../controlerBebidas.php" method="post">
 
-					<input type="hidden" name="opcao" value="1"/>
+					<input type="hidden" name="opcao" value="1" />
 
 					<div class="form-group">
 						<label for="nome">Nome</label>
@@ -41,7 +41,7 @@
 					</div>
 					<div class="form-group">
 						<label for="qtdEstoque">Quantidade em Estoque</label>
-						<input type="text" class="form-control" name="qtdEstoque" id="qtdEstoque" placeholder="Quantidade em Estoque">
+						<input type="text" class="form-control" name="qde_estoque" id="qde_estoque" placeholder="Quantidade em Estoque">
 					</div>
 					<div class="form-group">
 						<label for="fabricante">Fabricante</label>
