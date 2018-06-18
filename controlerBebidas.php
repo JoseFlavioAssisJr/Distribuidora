@@ -46,7 +46,7 @@ if($opcao == 3)
 
 if($opcao == 4)
 {
-    $id_bebida = (int) $_REQUEST["id_bebida"];
+    $id_bebida = (int)$_REQUEST["id_bebida"];
     
     $bebidasDao = new BebidasDAO();
     $bebidasDao->excluirBebidas($id_bebida);

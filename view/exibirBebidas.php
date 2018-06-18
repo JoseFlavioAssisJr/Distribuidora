@@ -33,7 +33,7 @@
 							<a class="nav-link" href="inserirBebidas.php">Cadastro</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="controlerBebidas.php?opcao=2">Listar Bebidas</a>
+							<a class="nav-link" href="../controlerBebidas.php?opcao=2">Listar Bebidas</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Blog</a>
@@ -81,7 +81,7 @@
 
 							
 
-							echo "<td><a href='../controlerBebidas.php?opcao=3&id=$b->id_bebida'> Alterar </a>&nbsp; <a href='../controlerBebidas.php?opcao=4&id=$b->id_bebida'> Excluir</a>  </td>";
+							echo "<td><a href='../controlerBebidas.php?opcao=3&id=$b->id_bebida'> Alterar </a>&nbsp; <a href='../controlerBebidas.php?opcao=4&id_bebida=$b->id_bebida'> Excluir</a>  </td>";
 							echo "</tr>";
 
 						}
