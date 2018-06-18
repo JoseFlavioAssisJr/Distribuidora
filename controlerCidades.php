@@ -6,7 +6,7 @@ require_once('CidadesDAO.inc');
 $opcao = (int)$_REQUEST['opcao'];
 if($opcao == 1)
 {
-    $cidade = new Cidades($_POST['cidade'], $_POST['estado'], $_POST['CEP'], $_POST['valorfrete_porPeso'], $_POST['peso']);
+    $cidade = new Cidades($_POST['nome'], $_POST['estado'], $_POST['cep'], $_POST['valorFrete'], $_POST['peso']);
     $cidadesDao = new CidadesDAO();
     
     $cidadesDao->incluirCidades($cidade);

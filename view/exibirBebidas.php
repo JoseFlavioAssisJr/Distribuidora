@@ -21,29 +21,9 @@
 
 	<div class="container-fluid">
 		
-			<div class="row">
+		<div class="row" style="height: 50px">
+			<?php require_once("menu.php"); ?>
 			
-			<div class="row menu">
-				<div class="col-12">
-					<ul class="nav">
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="inserirBebidas.php">Cadastro</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../controlerBebidas.php?opcao=2">Listar Bebidas</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Blog</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link " href="#">Contato</a>
-						</li>
-					</ul>
-				</div>
-			</div>
 		</div>
 
 

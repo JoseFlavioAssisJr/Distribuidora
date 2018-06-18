@@ -12,55 +12,61 @@
 <body>
 	<div class="container-fluid">
 		<!-- menu -->
-		<div class="row">
+
+
+		<div class="row" style="height: 50px">
 			
-			<div class="row menu">
-				<div class="col-12">
-					
-					<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-						<a class="navbar-brand" href="#">Distribuidora</a>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav mr-auto">
-								<li class="nav-item">
-									<a class="nav-link active" href="#">Home</a>
-								</li>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Bebidas
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item" href="#">Cadastrar Bebidas</a>
-										<a class="dropdown-item" href="#">Lista Bebidas</a>
+			<?php require_once ("menu.php") ?>
+			
+		</div>
+		<div class="row">
+			<div class="col-12">
 
-									</div>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="view/inserirBebidas.php">Cadastro</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="controlerBebidas.php?opcao=2">Listar Bebidas</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Blog</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link " href="#">Contato</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
+				<h1>Cadastro Cliente</h1>
 
-				</div>
+				<form action="../controlerBebidas.php" method="post">
+
+					<input type="hidden" name="opcao" value="1" />
+
+					<div class="form-group">
+						<label for="nome">Nome</label>
+						<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+					</div>
+					<div class="form-group">
+						<label for="volume">Cnpj</label>
+						<input type="text" class="form-control" name="volume" id="volume" placeholder="Volume">
+					</div>
+					<div class="form-group">
+						<label for="preco">Endereço</label>
+						<input type="text" class="form-control" name="preco" id="preco" placeholder="Preco">
+					</div>
+					<div class="form-group">
+						<label for="peso">Cidade</label>
+						<input type="text" class="form-control" name="peso" id="peso" placeholder="Peso">
+					</div>
+
+
+					<button type="submit" class="btn btn-primary">Gravar</button>
+				</form>
+
+				
+
 			</div>
+
 
 		</div>
 
-		<?php
-        // put your code here
-		?>
+		
+	</div>
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	</body>
-	</html>
+
+
+	<?php
+        // put your code here
+	?>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</body>
+</html>

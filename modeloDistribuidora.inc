@@ -99,8 +99,8 @@ private $CEP;
 private $valorfrete_porPeso;
 private $peso;
 
-function Cidades($id_cidade, $cidade, $estado, $CEP, $valorfrete_porPeso, $peso) {
-$this->id_cidade = $id_cidade;
+function Cidades( $cidade, $estado, $CEP, $valorfrete_porPeso, $peso) {
+
 $this->cidade = $cidade;
 $this->estado = $estado;
 $this->CEP = $CEP;
