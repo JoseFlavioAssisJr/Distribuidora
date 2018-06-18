@@ -38,7 +38,7 @@ class ClientesDAO
 
 
     
-    public function excluirBebidas($id_cliente)
+    public function excluirClientes($id_cliente)
     {
             $sql = $this->con->prepare("delete from clientes where id_cliente=:id_cliente");
             
