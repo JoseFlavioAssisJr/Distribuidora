@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Distribuidora de Bebidas</title>
+	<title>Cadastro Clientes</title>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container-fluid">
@@ -16,6 +16,7 @@
 			
 			<div class="row menu">
 				<div class="col-12">
+					
 					<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 						<a class="navbar-brand" href="#">Distribuidora</a>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -28,8 +29,9 @@
 										Bebidas
 									</a>
 									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item" href="view/inserirBebidas.php">Cadastrar Bebidas</a>
-										<a class="dropdown-item" href="controlerBebidas.php?opcao=2">Lista Bebidas</a>
+										<a class="dropdown-item" href="#">Cadastrar Bebidas</a>
+										<a class="dropdown-item" href="#">Lista Bebidas</a>
+
 									</div>
 								</li>
 								<li class="nav-item">
@@ -47,6 +49,7 @@
 							</ul>
 						</div>
 					</nav>
+
 				</div>
 			</div>
 
@@ -56,8 +59,8 @@
         // put your code here
 		?>
 
-
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	</body>
 	</html>
