@@ -59,7 +59,7 @@
 
 					<div class="form-group">
 						<label for="nome">ID</label>
-						<input type="text" class="form-control" name="id_bebida" id="id_bebida" value="<?php echo $b->id_bebida ?>">
+						<input type="text" class="form-control" name="id_bebida" id="id_bebida" value="<?php echo $b->id_bebida ?>" readonly>
 					</p>
 				</div>
 

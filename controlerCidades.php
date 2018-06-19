@@ -58,7 +58,7 @@ if($opcao == 4)
 if($opcao == 5)
 {
     $cidade = new Cidades($_POST['cidade'], $_POST['estado'],$_POST['cep'], $_POST['valorFrete'], $_POST['peso']);
-    $cidade->setId_cidade($_POST['id']);
+    $cidade->setId_cidade($_POST['id_cidade']);
     
     $cidadesDao = new CidadesDAO();
     

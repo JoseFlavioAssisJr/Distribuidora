@@ -52,47 +52,51 @@
 
 				<div class="row">
 
-						<div class="col-12">
+					<div class="col-12">
 
-							<h1>Atualizar Cidade</h1>
+						<h1>Atualizar Cidade</h1>
 
-							<form action="../controlerCidades.php?id=<?php $c->id_cidade ?>" method="post">
+						<form action="../controlerCidades.php?id_cidade=<?php $c->id_cidade ?>" method="post">
 
-								<input type="hidden" name="opcao" value="5" />
-								<input type="hidden" name="id_cidade" value="<?php $c->id_cidade ?>"/>
+							<input type="hidden" name="opcao" value="5" />
 
-								<div class="form-group">
-									<label for="nome">Nome Cidade</label>
-									<input type="text" class="form-control" name="nome" id="nome" value="<?php echo $c->cidade; ?> ">
-								</div>
-								<div class="form-group">
-									<label for="volume">Estado</label>
-									<input type="text" class="form-control" name="estado" id="estado" value="<?php echo $c->estado; ?>">
-								</div>
-								<div class="form-group">
-									<label for="preco">CEP</label>
-									<input type="text" class="form-control" name="cep" id="cep" value="<?php echo $c->CEP; ?>">
-								</div>
-								<div class="form-group">
-									<label for="peso">Valor frete por peso</label>
-									<input type="text" class="form-control" name="valorFrete" id="valorFrete" value="<?php echo $c->valorfrete_porPeso; ?>" >
-								</div>
-								<div class="form-group">
-									<label for="qtdEstoque">Peso / Quilogramas</label>
-									<input type="text" class="form-control" name="peso" id="peso" value="<?php echo $c->peso; ?>" >
-								</div>
-
-								<button type="submit" class="btn btn-primary">Atualizar</button>
-							</form>
-
-
+							<div class="form-group">
+								<label for="nome">ID</label>
+								<input type="text" class="form-control" name="id_cidade" id="id_cidade" value="<?php echo $c->id_cidade ?>" readonly>
+							</p>
+						</div>
+						<div class="form-group">
+							<label for="nome">Nome Cidade</label>
+							<input type="text" class="form-control" name="cidade" id="cidade" value="<?php echo $c->cidade; ?> ">
+						</div>
+						<div class="form-group">
+							<label for="volume">Estado</label>
+							<input type="text" class="form-control" name="estado" id="estado" value="<?php echo $c->estado; ?>">
+						</div>
+						<div class="form-group">
+							<label for="preco">CEP</label>
+							<input type="text" class="form-control" name="cep" id="cep" value="<?php echo $c->CEP; ?>">
+						</div>sss
+						<div class="form-group">
+							<label for="peso">Valor frete por peso</label>
+							<input type="text" class="form-control" name="valorFrete" id="valorFrete" value="<?php echo $c->valorfrete_porPeso; ?>" >
+						</div>
+						<div class="form-group">
+							<label for="qtdEstoque">Peso / Quilogramas</label>
+							<input type="text" class="form-control" name="peso" id="peso" value="<?php echo $c->peso; ?>" >
 						</div>
 
-					</div>
+						<button type="submit" class="btn btn-primary">Atualizar</button>
+					</form>
+
+
+				</div>
+
+			</div>
+
+		</div>
 
 	</div>
-
-</div>
 </div>
 
 
