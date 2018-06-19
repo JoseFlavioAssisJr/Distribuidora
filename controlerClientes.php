@@ -48,7 +48,7 @@ if($opcao == 3)
 
 if($opcao == 4)
 {
-    $id_cliente = (int) $_REQUEST["id_cliente"];
+    $id_cliente = $_REQUEST['id_cliente'];
     
     $clientesDao = new ClientesDAO();
     $clientesDao->excluirClientes($id_cliente);
