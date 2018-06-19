@@ -175,8 +175,8 @@ private $cnpj;
 private $endereco;
 private $id_cidade;
 
-function Clientes($id_cliente, $nome, $cnpj, $endereco, $id_cidade) {
-$this->id_cliente = $id_cliente;
+function Clientes( $nome, $cnpj, $endereco, $id_cidade) {
+
 $this->nome = $nome;
 $this->cnpj = $cnpj;
 $this->endereco = $endereco;

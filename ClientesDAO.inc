@@ -13,14 +13,14 @@ class ClientesDAO
         $this->con = $c->getConexao();
     }
     
-    public function incluirClientes(Clientes $clientes)
+    public function incluirCliente(Clientes $cliente)
     {
         $sql = $this->con->prepare("insert into clientes(nome, cnpj, endereco, id_cidade) values (:nom,:cnpj,:endereco, :id_cidade)");
         
-        $sql->bindValue(':nom', $clientes->getNome());
-        $sql->bindValue(':cnpj', $clientes->getCnpj());
-        $sql->bindValue(':endereco', $clientes->getEndereco());
-        $sql->bindValue(':id_cidade', $clientes->getId_cidade());
+        $sql->bindValue(':nom', $cliente->getNome());
+        $sql->bindValue(':cnpj', $cliente->getCnpj());
+        $sql->bindValue(':endereco', $cliente->getEndereco());
+        $sql->bindValue(':id_cidade', $cliente->getId_cidade());
         
         $sql->execute();
     }

@@ -36,7 +36,7 @@
 
 				<h1>Cadastro Cliente</h1>
 
-				<form action="../controlerBebidas.php" method="post">
+				<form action="../controlerClientes.php" method="post">
 
 					<input type="hidden" name="opcao" value="1" />
 
@@ -45,18 +45,18 @@
 						<input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
 					</div>
 					<div class="form-group">
-						<label for="volume">Cnpj</label>
-						<input type="text" class="form-control" name="volume" id="volume" placeholder="Volume">
+						<label for="cnpj">CNPJ</label>
+						<input type="text" class="form-control" name="cnpj" id="cnpj" placeholder="CNPJ">
 					</div>
 					<div class="form-group">
-						<label for="preco">Endereço</label>
-						<input type="text" class="form-control" name="preco" id="preco" placeholder="Preco">
+						<label for="endereco">Endereço</label>
+						<input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereço">
 					</div>
 
 
 					<div class="form-group">
 						<label for="cidade">Cidade</label>
-						<select type="text" class="form-control" name="cidade">
+						<select type="text" class="form-control" name="id_cidade">
 						<?php foreach ($cidades as $c) {
 							echo "<option value=$c->id_cidade> $c->cidade</option>";
 						} ?>	

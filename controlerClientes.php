@@ -7,10 +7,11 @@ require_once('CidadesDAO.inc');
 $opcao = (int)$_REQUEST['opcao'];
 if($opcao == 1)
 {
-    $cliente = new Bebidas($_POST['nome'], $_POST['cnpj'], $_POST['endereco'], $_POST['id_cidade']);
+    $cliente = new Clientes($_POST['nome'], $_POST['cnpj'], $_POST['endereco'], $_POST['id_cidade']);
+   // $cliente->setId_cidade($_POST['id_cidade']);
     $clientesDao = new ClientesDAO();
     
-    $clientesDao->incluirBebida($cliente);
+    $clientesDao->incluirCliente($cliente);
     
     header("Location:controlerClientes.php?opcao=2");
     
