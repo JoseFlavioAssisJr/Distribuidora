@@ -1,3 +1,5 @@
+<?php require_once("../conexao.inc"); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,33 +42,46 @@
 						<label for="preco">Endereço</label>
 						<input type="text" class="form-control" name="preco" id="preco" placeholder="Preco">
 					</div>
+
+
 					<div class="form-group">
-						<label for="peso">Cidade</label>
-						<input type="text" class="form-control" name="peso" id="peso" placeholder="Peso">
-					</div>
+						<label for="cidade">Cidade</label>
+						<select type="text" class="form-control" name="cidade">
+							
+							<?php 
+
+							$sql = $con->prepare('SELECT id_cidade, cidade FROM cidades');
+							$sql->execute();
+							$result = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+							?>
+							
+
+							<?php foreach ($result as $key => $row) { ?>
+								<option value=" <?php echo $row['id_cidade'] ?> "><?php echo $row['cidade']; ?> </option>
+						<?php	} ?>
 
 
-					<button type="submit" class="btn btn-primary">Gravar</button>
-				</form>
 
-				
+						</select>
+
+						<br>
+
+
+						<button type="submit" class="btn btn-primary">Gravar</button>
+					</form>
+
+				</div>
 
 			</div>
 
-
 		</div>
 
-		
-	</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
 
-
-	<?php
-        // put your code here
-	?>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-</body>
-</html>
+	</body>
+	</html>
