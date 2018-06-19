@@ -26,7 +26,9 @@ class ClientesDAO
     }
     
     public function getClientes(){
-        $rs = $this->con->query("SELECT * FROM clientes");
+        $rs = $this->con->query("SELECT c.*, d.cidades
+                 FROM clientes c
+                 INNER JOIN cidades d ON c.id_cidade = d.id_cidade");
         
         $lista = array();
         while($clientes=$rs->fetch(PDO::FETCH_OBJ)){
