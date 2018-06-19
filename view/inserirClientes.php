@@ -12,6 +12,16 @@
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
+
+	<?php 
+
+	session_start();
+
+	$cidades = $_SESSION['cidades'];
+
+	?>
+
 	<div class="container-fluid">
 		<!-- menu -->
 
@@ -47,21 +57,9 @@
 					<div class="form-group">
 						<label for="cidade">Cidade</label>
 						<select type="text" class="form-control" name="cidade">
-							
-							<?php 
-
-							$sql = $con->prepare('SELECT id_cidade, cidade FROM cidades');
-							$sql->execute();
-							$result = $sql->fetchAll(PDO::FETCH_ASSOC);
-
-							?>
-							
-
-							<?php foreach ($result as $key => $row) { ?>
-								<option value=" <?php echo $row['id_cidade'] ?> "><?php echo $row['cidade']; ?> </option>
-						<?php	} ?>
-
-
+						<?php foreach ($cidades as $c) {
+							echo "<option value=$c->id_cidade> $c->cidade</option>";
+						} ?>	
 
 						</select>
 

@@ -38,7 +38,7 @@
 					Clientes
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="view/inserirClientes.php">Cadastro</a>
+					<a class="dropdown-item" href="controlerClientes.php?opcao=6">Cadastro</a>
 					<a class="dropdown-item" href="controlerClientes.php?opcao=2">Lista Clientes</a>
 				</div>
 			</li>		

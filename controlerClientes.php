@@ -2,6 +2,7 @@
 require_once('conexao.inc');
 require_once('modeloDistribuidora.inc');
 require_once('ClientesDAO.inc');
+require_once('CidadesDAO.inc');
 
 $opcao = (int)$_REQUEST['opcao'];
 if($opcao == 1)
@@ -69,3 +70,15 @@ if($opcao == 5)
 }
 
 
+if ($opcao == 6) {
+    
+    $cidadesDao = new CidadesDAO();
+
+    $lista = $cidadesDao->getCidades();
+
+    session_start();
+
+    $_SESSION['cidades']=$lista;
+
+    header("Location:view/inserirClientes.php");
+}
