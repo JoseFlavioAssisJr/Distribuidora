@@ -59,7 +59,7 @@
 							
 													
 
-							echo "<td><a href='../controlerCidades.php?opcao=3&id=$c->id_cidade'> Alterar </a>&nbsp; <a href='../controlerCidades.php?opcao=4&id_cidade=$c->id_cidade'> Excluir</a>  </td>";
+							echo "<td><a href='../controlerClientes.php?opcao=3&id=$c->id_cliente'> Alterar </a>&nbsp; <a href='../controlerCidades.php?opcao=4&id_cidade=$c->id_cliente'> Excluir</a>  </td>";
 							echo "</tr>";
 
 						}
