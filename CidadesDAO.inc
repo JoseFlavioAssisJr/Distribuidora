@@ -67,6 +67,7 @@ class CidadesDAO
         $sql->bindValue(':CEP', $cidade->getCEP());
         $sql->bindValue(':valorfrete_porPeso', $cidade->getValorfrete_porPeso());
         $sql->bindValue(':peso', $cidade->getPeso());
+        $sql->bindValue(':id_cidade', $cidade->getId_cidade());
         $sql->execute();
     }
     

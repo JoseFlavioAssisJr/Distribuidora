@@ -57,7 +57,7 @@ if($opcao == 4)
 
 if($opcao == 5)
 {
-    $bebida = new Bebidas($_POST['pNome'], $_POST['pVolume'],$_POST['pPreco'], $_POST['pPeso'], $_POST['pQde_estoque'],$_POST['pFabricante']);
+    $bebida = new Bebidas($_POST['nome'], $_POST['volume'],$_POST['preco'], $_POST['peso'], $_POST['qde_estoque'],$_POST['fabricante']);
     $bebida->setId_bebida($_POST['id_bebida']);
     
     $bebidasDao = new BebidasDAO();

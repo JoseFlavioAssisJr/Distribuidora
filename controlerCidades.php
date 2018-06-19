@@ -30,7 +30,7 @@ if($opcao == 2) {
 
 if($opcao == 3)
 {
-    $id_cidade = (int)$_REQUEST['id_cidade'];
+    $id_cidade = (int)$_REQUEST['id'];
     
     $cidadesDao = new CidadesDAO();
     
@@ -57,8 +57,8 @@ if($opcao == 4)
 
 if($opcao == 5)
 {
-    $cidade = new Cidades($_POST['pCidade'], $_POST['pEstado'],$_POST['pCEP'], $_POST['pValorfrete_porPeso'], $_POST['pPeso']);
-    $cidade->setId_cidade($_POST['id_cidade']);
+    $cidade = new Cidades($_POST['cidade'], $_POST['estado'],$_POST['cep'], $_POST['valorFrete'], $_POST['peso']);
+    $cidade->setId_cidade($_POST['id']);
     
     $cidadesDao = new CidadesDAO();
     
