@@ -14,12 +14,9 @@
 
 	<?php 
 
-	session_start();
-
-	$item = $_SESSION['bebidas'];
+	
 
 
-	echo "$item->nome;";
 	?>
 	<div class="container-fluid">
 		<!-- menu -->
@@ -90,7 +87,9 @@
 				<div col->
 					<?php
 
+					session_start();
 
+					$item = $_SESSION['bebidas'];
 					foreach($item as $item){	
 						?>
 
@@ -101,21 +100,21 @@
 								</tr>
 							</thead> -->
 							
-								<tr>
-									
-									<td><?php echo $item->getNome(); ?></td>
-									
-								</tr>
-								<tr>
-									
-									<td><?php echo $item->getPreco(); ?></td>
-									
-								</tr>
-								<tr>
-									
-									<td><?php echo $item->getFabricante(); ?></td>
-									
-								</tr>
+							<tr>
+
+								<td><?php echo $item->nome; ?></td>
+
+							</tr>
+							<tr>
+
+								<td><?php echo $item->preco; ?></td>
+
+							</tr>
+							<tr>
+
+								<td><?php echo $item->fabricante; ?></td>
+
+							</tr>
 							
 						</table>
 					</div>
