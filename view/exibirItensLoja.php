@@ -7,15 +7,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Distribuidora de Bebidas</title>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
+	<?php 
+
+	session_start();
+
+	$item = $_SESSION['bebidas'];
+
+
+	echo "$item->nome;";
+	?>
 	<div class="container-fluid">
 		<!-- menu -->
 		<div class="row">
-			
-			<div class="row menu">
+
+			<div class="row menu" style="height: 50px">
 				<div class="col-12">
 					<!--	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> -->
 						<nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -74,69 +84,57 @@
 
 					</div>
 				</div>
+			</div>
+
+			<div class="row">
+				<div col->
+					<?php
 
 
-				<div class="row">
-					<div col->
-						<?php
-
-						session_start();
-
-						$item = $_SESSION['bebidas'];
-
-						foreach($itens as $i){
+					foreach($item as $item){	
 						?>
-
-
-
-
-
-
-
-						?>
-
 
 						<table class="table table-hover cellspcacing="5">
 						<!--	<thead>
 								<tr>
-									<td><?php echo $item->getNome();?></td>
+									
 								</tr>
 							</thead> -->
-							<tbody>
+							
 								<tr>
 									
-									<td>?php echo $item->getNome();?></td></td>
+									<td><?php echo $item->getNome(); ?></td>
 									
 								</tr>
 								<tr>
 									
-									<td>?php echo $item->getPreco();?></td>
+									<td><?php echo $item->getPreco(); ?></td>
 									
 								</tr>
 								<tr>
 									
-									<td>?php echo $item->getFabricante();?></td>
+									<td><?php echo $item->getFabricante(); ?></td>
 									
 								</tr>
-							</tbody>
+							
 						</table>
 					</div>
 				</div>	
 
-				<?php } ?>
-			</div>
-
+			<?php } ?>
 		</div>
 
-
-
-		<?php
-		// put your code here
-		?>
-
 	</div>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+
+	<?php
+		// put your code here
+	?>
+
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 </body>
 </html>
 
