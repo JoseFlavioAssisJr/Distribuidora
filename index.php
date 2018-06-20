@@ -24,6 +24,9 @@
 			<li class="nav-item">
 				<a class="nav-link active" href="#">Home</a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="view/exibirItensLoja.php">Loja</a>
+			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Bebidas
@@ -57,6 +60,7 @@
 			<li class="nav-item">
 				<a class="nav-link" href="controlerBebidas.php?opcao=2">Listar Bebidas</a>
 			</li>
+			
 			<li class="nav-item">
 				<a class="nav-link" href="#">Blog</a>
 			</li>

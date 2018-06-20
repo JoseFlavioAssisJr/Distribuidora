@@ -241,8 +241,8 @@ private $data_compra;
 private $valor_total;
 private $valortotal_frete;
 
-function Compras($id_compra, $id_cliente, $data_compra, $valor_total, $valortotal_frete) {
-$this->id_compra = $id_compra;
+function Compras($id_cliente, $data_compra, $valor_total, $valortotal_frete) {
+
 $this->id_cliente = $id_cliente;
 $this->data_compra = strtotime($data_compra);
 $this->valor_total = $valor_total;
