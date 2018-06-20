@@ -23,9 +23,13 @@ $this->fabricante = $fabricante;
 
 public function Bebidas($nome, $volume, $preco, $peso, $qde_estoque, $fabricante) {
 
+$precoFinal=str_replace(",",".",$preco);
+
+
+
 $this->nome = $nome;
 $this->volume = $volume;
-$this->preco = $preco;
+$this->preco = $precoFinal;
 $this->peso = $peso;
 $this->qde_estoque = $qde_estoque;
 $this->fabricante = $fabricante;
@@ -61,7 +65,7 @@ function getFabricante() {
 return $this->fabricante;
 }
 
-function setId_bebida($pId_bebida) {
+function setId_bebida($pId_bebida):float {
 $this->id_bebida = $pId_bebida;
 }
 function setNome($nome) {

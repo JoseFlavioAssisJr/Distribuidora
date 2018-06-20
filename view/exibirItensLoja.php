@@ -93,13 +93,8 @@
 					foreach($item as $item){	
 						?>
 
-						<table class="table table-hover cellspcacing="5">
-						<!--	<thead>
-								<tr>
-									
-								</tr>
-							</thead> -->
-							
+						<table class="table width="50%" >
+
 							<tr>
 
 								<td><?php echo $item->nome; ?></td>
@@ -116,25 +111,30 @@
 
 							</tr>
 							
+							<tr>
+								
+								<?php echo "<td><a href='../controlerCompra.php?opcao=3&id=$item->id_bebida'> Comprar </a></td>" ?>
+								
+							</tr>
+
 						</table>
 					</div>
 				</div>	
 
 			<?php } ?>
-		</div>
-
-	</div>
 
 
 
-	<?php
+
+
+			<?php
 		// put your code here
-	?>
+			?>
 
-</div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-</body>
-</html>
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</body>
+	</html>
 
 
